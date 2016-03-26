@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLedControl.View.MainLedControl"
+             Title="Xamarin LED Control" 
+             Style="{StaticResource BaseStyle}">
+  
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="0, 20, 0, 0"/>
+  </ContentPage.Padding>
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <!--0-->
+      <RowDefinition Height="*"/>
+      <!--1-->
+      <RowDefinition Height="1"/>
+      <!--2-->
+      <RowDefinition Height="*"/>
+      <!--3-->
+      <RowDefinition Height="1"/>
+      <!--4-->
+      <RowDefinition Height="*"/>
+      <!--5-->
+      <RowDefinition Height="1"/>
+      <!--6-->
+      <RowDefinition Height="*"/>
+      <!--7-->
+      <RowDefinition Height="1"/>
+      <!--8-->
+      <RowDefinition Height="*"/>
+      <!--9-->
+      <RowDefinition Height="1"/>
+      <!--10-->
+      <RowDefinition Height="*"/>
+      <!--11-->
+      <RowDefinition Height="1"/>
+      <!--12-->
+      <RowDefinition Height="*"/>
+      <!--13-->
+      <RowDefinition Height="1"/>
+      <!--14-->
+      <RowDefinition Height="*"/>
+      <!--15-->
+      <RowDefinition Height="*"/>
+      <!--16-->
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="1"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"
+            Text="{StaticResource Off}" BackgroundColor="#808080" 
+            Command="{Binding ChangeLedCommand}" CommandParameter="off" />
+
+    <Button Grid.Row="3" Grid.Column="1" Text="{StaticResource White}"
+            BackgroundColor="#808080" Command="{Binding ChangeLedCommand}"
+            CommandParameter="white"/>
+
+    <Button Grid.Row="3" Grid.Column="3" Text="{StaticResource Pink}"
+            BackgroundColor="#FFC0CB" Command="{Binding ChangeLedCommand}"
+            CommandParameter="pink"/>
+
+    <Button Grid.Row="5" Grid.Column="1" Text="{StaticResource Red}"
+            BackgroundColor="#FF0000" Command="{Binding ChangeLedCommand}"
+            CommandParameter="red"/>
+
+    <Button Grid.Row="5" Grid.Column="3" Text="{StaticResource Orange}"
+            BackgroundColor="#FFAA55" Command="{Binding ChangeLedCommand}"
+            CommandParameter="orange"/>
+
+    <Button Grid.Row="7" Grid.Column="1" Text="{StaticResource Yellow}"
+            BackgroundColor="#FFFF00" Command="{Binding ChangeLedCommand}"
+            CommandParameter="yellow"/>
+
+    <Button Grid.Row="7" Grid.Column="3" Text="{StaticResource Green}"
+            BackgroundColor="#008000" Command="{Binding ChangeLedCommand}"
+            CommandParameter="green"/>
+
+    <Button Grid.Row="9" Grid.Column="1" Text="{StaticResource Cyan}"
+            BackgroundColor="#00FFFF" Command="{Binding ChangeLedCommand}"
+            CommandParameter="cyan"/>
+
+    <Button Grid.Row="9" Grid.Column="3" Text="{StaticResource Blue}"
+            BackgroundColor="#0000FF" Command="{Binding ChangeLedCommand}"
+            CommandParameter="Blue"/>
+
+    <Button Grid.Row="11" Grid.Column="1" Text="{StaticResource Purple}"
+            BackgroundColor="#800080" Command="{Binding ChangeLedCommand}"
+            CommandParameter="purple"/>
+
+    <Button Grid.Row="11" Grid.Column="3" Text="{StaticResource Magenta}"
+            BackgroundColor="#FF00FF" Command="{Binding ChangeLedCommand}"
+            CommandParameter="magenta"/>
+  </Grid>
+</ContentPage>

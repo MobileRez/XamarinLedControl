@@ -1,0 +1,34 @@
+﻿<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLedControl.App">
+  
+  <Application.Resources>
+    <ResourceDictionary>
+      <!--Text to fill in buttons-->
+      <x:String x:Key="Off">Off</x:String>
+      <x:String x:Key="White">White</x:String>
+      <x:String x:Key="Pink">Pink</x:String>
+      <x:String x:Key="Red">Red</x:String>
+      <x:String x:Key="Orange">Orange</x:String>
+      <x:String x:Key="Yellow">Yellow</x:String>
+      <x:String x:Key="Green">Green</x:String>
+      <x:String x:Key="Cyan">Cyan</x:String>
+      <x:String x:Key="Blue">Blue</x:String>
+      <x:String x:Key="Purple">Purple</x:String>
+      <x:String x:Key="Magenta">Magenta</x:String>
+      <x:String x:Key="EeryForest">EeryForest</x:String>
+      <x:String x:Key="Microsoft">Microsoft</x:String>
+
+      <!--Colors-->
+      <Color x:Key="AppBground">#FFFFFF</Color>
+
+      <!--Styles-->
+      <Style x:Key="BaseStyle" TargetType="VisualElement">
+        <Setter Property="BackgroundColor" Value="{StaticResource AppBground} "/>
+
+      </Style>
+
+    </ResourceDictionary>
+  </Application.Resources>
+
+</Application>
